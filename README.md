@@ -11,7 +11,7 @@ I manage multiple servers, all with their own services, built on top of differen
 What do I need?
 ===============
 
-[Bundler](http://gembundler.com/) is really all you need to set up all required gems.
+Of course, make sure you have Ruby installed (get [RVM](http://rvm.beginrescueend.com/) if you don't have it installed yet!). I've tested on 1.8.7, 1.9.2 and Ruby Enterprise Edition. [Bundler](http://gembundler.com/) is really all you need to set up all required gems.
 
     gem install bundler
     bundle install
