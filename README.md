@@ -48,6 +48,21 @@ Once the environment variables are set up and the Sinatra app is running, all yo
  * `title` (optional) - The title of the Notifo alert
  * `url` (optional) - Notifo allows you to specify a URL to open when clicking on an alert in your list
 
+Deploying on Heroku
+===================
+
+[Heroku](http://heroku.com) is a great place to deploy Fail Notifier. It's rather easy to get up and running. Here's the short version of grabbing a copy of Fail Notifier and deploying on Heroku:
+
+    git clone git://github.com/dennmart/fail_notifier.git
+    cd fail_notifier
+    heroku create my-fail-notifier
+    heroku config:add NOTIFO_USERNAME=<Your Notifo Username> NOTIFO_API_SECRET=<Your Notifo API Secret> FAIL_NOTIFIER_USER=<Basic Auth User> FAIL_NOTIFIER_PASS=<Basic Auth Password>
+    git push heroku master
+
+And that's it! Your instance of Fail Notifier should be up and running. You can run a quick test using cURL in the terminal:
+
+    curl http://my-fail-notifier.heroku.com/fail -X POST -u <Basic Auth User>:<Basic Auth Password> -d message="Test Message"
+
 What next?
 ==========
 
