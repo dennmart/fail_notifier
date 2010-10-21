@@ -48,6 +48,8 @@ Once the environment variables are set up and the Sinatra app is running, all yo
  * `title` (optional) - The title of the Notifo alert
  * `url` (optional) - Notifo allows you to specify a URL to open when clicking on an alert in your list
 
+There are a few [examples for different programming languages](http://github.com/dennmart/fail_notifier/wiki/Examples) in the Wiki.
+
 Deploying on Heroku
 ===================
 
