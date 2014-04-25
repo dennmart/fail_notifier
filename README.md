@@ -1,3 +1,5 @@
+## Note: In January 2013, Notifo ceased operations, so this app does not work anymore!
+
 Fail Notifier
 =============
 
